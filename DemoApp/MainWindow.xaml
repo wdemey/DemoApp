@@ -1,0 +1,11 @@
+﻿<Window x:Class="DemoApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="121,185,0,0" VerticalAlignment="Top" Width="115" Height="41" Click="Button_Click"/>
+        <CheckBox x:Name="Checkbox" Content="CheckBox" HorizontalAlignment="Left" Margin="317,185,0,0" VerticalAlignment="Top" Height="63" Width="141" IsEnabled="False"/>
+        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Height="17" Margin="103,87,0,0" VerticalAlignment="Top" Width="271" Maximum="1000"/>
+
+    </Grid>
+</Window>
