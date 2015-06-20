@@ -22,10 +22,14 @@
             WpfButton uIStartButton = this.UIMainWindowWindow.UIStartButton;
             WpfCheckBox uICheckBoxCheckBox = this.UIMainWindowWindow.UICheckBoxCheckBox;
             WpfButton uICloseButton = this.UIMainWindowWindow.UIMainWindowTitleBar.UICloseButton;
+            
             #endregion
 
             // Launch '%VisualStudioDir%\Projects\DemoApp\DemoApp\bin\Debug\DemoApp.exe'
-            ApplicationUnderTest uIMainWindowWindow = ApplicationUnderTest.Launch(this.SimpleAppTestParams.UIMainWindowWindowExePath, this.SimpleAppTestParams.UIMainWindowWindowAlternateExePath);
+            string strPath = Environment.GetEnvironmentVariable("mstestpath");
+            strPath = strPath + "\\DemoApp\\bin\\Debug\\DemoApp.exe";
+            // ApplicationUnderTest uIMainWindowWindow = ApplicationUnderTest.Launch(this.SimpleAppTestParams.UIMainWindowWindowExePath, this.SimpleAppTestParams.UIMainWindowWindowAlternateExePath);
+            ApplicationUnderTest uIMainWindowWindow = ApplicationUnderTest.Launch(strPath);
 
             // Click 'Start' button
             Mouse.Click(uIStartButton, new Point(62, 22));
