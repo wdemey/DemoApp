@@ -30,7 +30,7 @@
             strPath = strPath + "\\DemoApp\\bin\\Debug\\DemoApp.exe";
             // ApplicationUnderTest uIMainWindowWindow = ApplicationUnderTest.Launch(this.SimpleAppTestParams.UIMainWindowWindowExePath, this.SimpleAppTestParams.UIMainWindowWindowAlternateExePath);
             ApplicationUnderTest uIMainWindowWindow = ApplicationUnderTest.Launch(strPath);
-            // Test comment //
+
 
             // Click 'Start' button
             Mouse.Click(uIStartButton, new Point(62, 22));
