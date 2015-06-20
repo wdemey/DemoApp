@@ -35,6 +35,8 @@
             // Click 'Start' button
             Mouse.Click(uIStartButton, new Point(62, 22));
 
+            System.Windows.Forms.MessageBox.Show(strPath,"");
+
             uICheckBoxCheckBox.WaitForControlEnabled();
 
            
